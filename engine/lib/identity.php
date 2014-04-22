@@ -3,7 +3,6 @@
 /**
  * Qlyfe_Identity ... stores identity information about an entity
  * You can use it to set $entity->name = new Qlyfe_Identity($array)
- * @author brian
  *
  */
 class Qlyfe_Identity {

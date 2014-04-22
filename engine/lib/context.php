@@ -1,7 +1,5 @@
 <?php
 /**
- * @author brian
- * 
  * New for Qlyfe is the concept of context... actually Elgg has context but we are expanding
  * it.  What we want to do is have context dependant on plugins... for example:
  * 

@@ -3,10 +3,6 @@
  * Elgg library
  * Contains important functionality core to Elgg
  *
- * @package Elgg
- * @subpackage Core
- * @author Curverider Ltd
- * @link http://elgg.org/
  */
 
 /**
@@ -2792,7 +2788,6 @@ class Qlyfe_Classifier {
 
 /**
  * @qlyfe addition
- * @author brian
  * This is a new class that we're creating in order to replace the access_id
  *  that dominates all elgg entities, metadata, and annotations
  *  
@@ -2876,7 +2871,6 @@ function js_friendly_classifier($classifier) {
  * Some useful constant definitions
  * 
  *  @qlyfe addition
- * 	@author brian
  *  Changed these from numbers to Qlyfe_CLists
  *  @todo QLYFE BAP determine what to do about LOGGED_IN and DEFAULT
  *

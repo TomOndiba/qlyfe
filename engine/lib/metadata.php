@@ -5,17 +5,6 @@
  *
  * @package Elgg
  * @subpackage Core
- * @author Curverider Ltd <info@elgg.com>
- * @link http://elgg.org/
- */
-
-/**
- * ElggMetadata
- * This class describes metadata that can be attached to ElggEntities.
- *
- * @author Curverider Ltd <info@elgg.com>
- * @package Elgg
- * @subpackage Core
  */
 class ElggMetadata extends ElggExtender {
 	/**
@@ -184,7 +173,6 @@ function remove_metadata($entity_guid, $name, $value = "") {
  * Create a new metadata object, or update an existing one.
  * 
  *  @qlyfe addition
- * 	@author brian
  *  Changed $access_id to $clist
  *
  * @param int $entity_guid The entity to attach the metadata to

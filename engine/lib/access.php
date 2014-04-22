@@ -5,10 +5,6 @@
  *
  * @package Elgg
  * @subpackage Core
-
- * @author Curverider Ltd
-
- * @link http://elgg.org/
  */
 
 /**
@@ -422,7 +418,6 @@ function re_classify_by_type($type, $owner_guid, $network, $old_classifier, $new
 
 /**
  * @qlyfe addition this is the heart of our access changes
- * @author brian
  * 
  * Add access restriction sql code to a given query.
  * Note that if this code is executed in privileged mode it will return blank.
