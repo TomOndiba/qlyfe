@@ -1,0 +1,68 @@
+NEW PLUGINS
+	qlyfe_dev_tools
+	qlyfe_context
+	nop (might not be able to be a plugin) => override views/default/input/access.php
+	families (later)
+
+
+EXTEND PLUGINS
+	extend friends - friend confirmations
+				   - classified links
+
+=== DEV TOOLS
+	- errlog, firebug, sendmail, configure mail() see bap
+	- plugin tutorial
+	
+	
+=== INVESTIGATE
+	- profile vs. dashboard (why can't board be put there?)
+	- failsafe views??
+	
+=== BUGS
+	settings layout from GoogleChrome
+	message board post doesn't work (from profile) 
+		- no form element see http://elgg/pg/messageboard/[username] for comparison
+	
+=== FIXED PLUGINS
+	- populate user dashboard by default (& default should be fixed in config file)
+	- make active plugins fixed (via file)
+	- FYI engine/settings.php has db connection info
+
+=== NEW THEME
+	- look and feel changes (get a theme and modify it) 
+	- remove dashboard
+	- widen center aisle
+
+=== NEW PLUGINS
+	- later on SEARCH can be a plugin
+	- "who can see this"  plugin
+	- openid plugin
+	- add the photo album (there is already a good existing one to extend)
+	- new signup
+
+=== FRIENDS
+	- add friend confirmation system
+
+=== CHANGE ACCESS LEVELS to be clists and classifiers (elgglib.php=> ACCESS_FRIENDS..etc)
+	- views/default/input/access.php
+	- add classifiers
+
+=== ADD CONTEXT + LAYOUT
+	- tabs, network/class = classifier
+	- TABBED HEADER & Sidebar calls session-> setContext() or another function setClassifier()
+	- content of EVERY page should be dependent on the classifier (including 'owner')
+	
+=== MESSAGE BOARD enhancements... 
+	- message board needs to be modified or compeletely redone
+
+=== ADD the magic box
+		
+=== MOVE DB to the NOP server
+
+
+THE PLAN
+-- extend ELGG and create ELGG plugins so that later on the ELGG network can become our distributed system
+	- make tabs plugin.. friends/family/nbh... etc plugins (context)
+	- classifiers as a plugin???
+
+

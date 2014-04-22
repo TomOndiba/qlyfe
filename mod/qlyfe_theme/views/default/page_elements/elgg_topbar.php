@@ -1,0 +1,6 @@
+<?php
+
+	/**
+	 * no topbar anymore
+	 */
+?>

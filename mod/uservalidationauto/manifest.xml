@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Qlyfe" />
+	<field key="version" value="1.7" />
+	<field key="description" value="Automatically validate users when they sign up." />
+	<field key="website" value="http://qlyfe.com/" />
+	<field key="copyright" value="(C) Qlyfe Inc 2010" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009033101" />
+</plugin_manifest>

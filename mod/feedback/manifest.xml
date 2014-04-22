@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Eder Weber" />
+	<field key="version" value="0.1" />
+	<field key="description" value="Qlyfe Feedback Plugin" />
+	<field key="website" value="http://www.qlyfe.com" />
+	<field key="copyright" value="(C) Qlyfe 2010" />
+	<field key="licence" value="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU Public License version 2" />
+	<field key="elgg_version" value="2009030702" />
+</plugin_manifest>

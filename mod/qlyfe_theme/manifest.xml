@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Eder Weber - Qlyfe" />
+	<field key="version" value="0.1" />
+	<field key="description" value="Qlyfe theme" />
+	<field key="website" value="http://www.qlyfe.com/" />
+	<field key="copyright" value="Qlyfe 2010" />
+	<field key="licence" value="Private" />
+	<field key="elgg_version" value="2009031301" />
+</plugin_manifest>

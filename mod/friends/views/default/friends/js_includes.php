@@ -1,0 +1,1 @@
+<script type="text/javascript" src="<?php echo $vars['url']; ?>mod/friends/javascript/friends.js"></script>

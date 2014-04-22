@@ -1,0 +1,67 @@
+- configure your apache PHP
+	enable mod_gd and mod_rewrite
+
+- Set up some hosts 
+
+	$ sudo gedit /etc/hosts
+	Add these two lines:
+
+		216.240.43.243 qlyfe-dev
+		127.0.0.1 qlyfe
+
+- checkout the "qlyfe" code from svn to /var/www (make sure you get a svn login)
+	It's best to use your IDE (Eclipse) to do the initial checkout
+	This should create the directoroy /var/www/qlyfe
+
+	svn://qlyfe-dev/qlyfe/trunk
+
+- create the qlyfe database and qlyfe user and populate the db
+
+	$ mysql
+	mysql > create database qlyfe;
+	myqsl > grant all privileges on qlyfe.* to qlyfe@localhost identified by 'abc123';
+	mysql > connect qlyfe;
+	mysql > source /var/www/qlyfe/qlyfe-config/qlyfe.sql;
+
+- Once your import Mysql Database , you should check Table (qlyfe_datalists)
+you should run below queries for YOUR INSTALL DIRECTORY PATH (/var/www/qlyfe/) and Dataroot (/var/www/data/)
+mysql > update qlyfe_datalists set value='/var/www/qlyfe/' where name='path';
+mysql > update qlyfe_datalists set value='/var/www/data/' where name='dataroot';
+
+- Create a virtual host called 'qlyfe'
+
+	$ sudo gedit /etc/apache2/httpd.conf
+	Add these lines:
+	
+		NameVirtualHost 127.0.0.1
+		<VirtualHost *>
+		    ServerName qlyfe
+		    DocumentRoot /var/www/qlyfe
+		</VirtualHost>
+
+- Restart apache
+
+	$sudo /etc/init.d/apache2 restart
+
+- Make a data directory
+
+	$sudo mkdir /var/data
+	$sudo chmod 777 /var/data
+
+- Go to http://qlyfe
+	Log in as 
+		username => qlyfe 
+		password => abc123
+		
+- Activate the following Plugins (if they're not already activated)
+	elgg_dev_tools (move to the top)
+	qlyfe_dev_tools (feel free to add to this at any time)
+	defaultwidgets
+	friends
+	notifications
+	messages
+	messageboard
+	nop
+
+- Errors will be written in the apache error log 
+	/var/log/apache2/error.log

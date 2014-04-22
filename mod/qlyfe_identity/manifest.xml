@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Eder Weber" />
+        <field key="version" value="0.1" />
+        <field key="description" value="Qlyfe identity widget for profile and dashboard" />
+        <field key="website" value="http://www.qlyfe.com/" />
+        <field key="copyright" value="(c) 2010 Qlyfe Inc." />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="recommends" value="" />
+        <field key="elgg_version" value="2009072201" />
+</plugin_manifest>

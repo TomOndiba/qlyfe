@@ -1,0 +1,87 @@
+- Set up some hosts 
+
+	In Windows/system32/drivers/etc/hosts
+	Add these two lines:
+
+		216.240.43.243 qlyfe-dev
+		127.0.0.1 qlyfe
+
+- 	checkout the "qlyfe" code from svn into your Apache Document Root 
+	( make sure you get a svn login)
+	It's best to use your IDE (Eclipse) to do the initial checkout
+	This should create the directoroy C:/www/qlyfe if C:/www is your document root
+
+	svn://qlyfe-dev/qlyfe/trunk
+
+-  create the qlyfe database and qlyfe user and populate the db
+	Open a command prompt and enter inside mysql console
+	
+	mysql > create database qlyfe;
+	myqsl > grant all privileges on qlyfe.* to qlyfe@localhost identified by 'abc123';
+	mysql > connect qlyfe;
+	mysql > source C:/www/qlyfe/qlyfe-config/qlyfe.sql;
+	
+	or simply do a mysql import 
+	 mysql -u username -ppassword qlyfe < C:/www/qlyfe/qlyfe-config/qlyfe.sql ;
+
+- Once your import Mysql Database , you should check Table (qlyfe_datalists)
+you should run below queries for YOUR INSTALL DIRECTORY PATH (c:/www/qlyfe/) and Dataroot (c:/www/data/)
+mysql > 
+	update qlyfe_datalists set value='c:/www/qlyfe/' where name='path';
+	update qlyfe_datalists set value='c:/www/data/' where name='dataroot';
+
+
+- Create a virtual host called 'qlyfe'
+
+	On your httpd.conf
+	Add these lines:
+	
+		NameVirtualHost 127.0.0.1
+		<VirtualHost *>
+		    ServerName qlyfe
+		    DocumentRoot C:/www/qlyfe
+		</VirtualHost>
+
+- Restart apache
+- Make a data directory in C:/www/data
+- Go to http://qlyfe
+	Log in as 
+		username => qlyfe 
+		password => abc123
+		
+- Activate the following Plugins (if they're not already activated)
+	elgg_dev_tools (move to the top)
+	qlyfe_dev_tools (feel free to add to this at any time)
+	defaultwidgets
+	friends
+	notifications
+	messages
+	messageboard
+	nop
+
+- Errors will be written in the apache error log 
+	{apache_path}/apache2/error.log
+
+- Setup your htaccess to work. Be sure to enable mod_rewrite on apache 	
+
+/** Installation Notes ***/
+Problem: 
+	Installed script won't work and will display blank screen or displays an Interface error
+	
+Solution: 
+	Update your code to the latest version 	
+ 	 	
+Problem:	
+ 	CSS wont load properly
+ 	
+Solution:
+	On your database table 'qlyfe_datalists'
+	Alter the path and dataroot values to correspond to your file path   		
+ 		
+Problem:
+	Cannot save relationship data with error 'access_id does not have a default value'
+Solution: 
+	This must be fixed on the code level but as a temporary fix
+	Alter the table qlyfe_entities and set `access_id` default value to 0
+	
+	
