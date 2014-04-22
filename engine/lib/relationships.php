@@ -5,14 +5,12 @@
  *
  * @package Elgg
  * @subpackage Core
- * @author Curverider Ltd <info@elgg.com>
  * @link http://elgg.org/
  */
 
 /**
  * Relationship class.
  *
- * @author Curverider Ltd
  * @package Elgg
  * @subpackage Core
  */

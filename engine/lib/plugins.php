@@ -5,7 +5,6 @@
  *
  * @package Elgg
  * @subpackage Core
- * @author Curverider Ltd
  * @link http://elgg.org/
  */
 
@@ -26,7 +25,6 @@ class PluginException extends Exception {}
 /**
  * @class ElggPlugin Object representing a plugin's settings for a given site.
  * This class is currently a stub, allowing a plugin to saving settings in an object's metadata for each site.
- * @author Curverider Ltd
  */
 class ElggPlugin extends ElggObject {
 	protected function initialise_attributes() {
@@ -307,7 +305,6 @@ function get_plugin_name($mainfilename = false) {
  * Example file:
  *
  * <plugin_manifest>
- * 	<field key="author" value="Curverider Ltd" />
  *  	<field key="version" value="1.0" />
  * 	<field key="description" value="My plugin description, keep it short" />
  *  	<field key="website" value="http://www.elgg.org/" />

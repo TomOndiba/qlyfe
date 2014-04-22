@@ -5,7 +5,6 @@
 	 *
 	 * @package Elgg
 	 * @subpackage Core
-	 * @author Curverider Ltd
 	 * @link http://elgg.org/
 	 */
 
@@ -13,7 +12,6 @@
 	/**
 	 * @class QueryComponent Query component superclass.
 	 * Component of a query.
-	 * @author Curverider Ltd
 	 * @see Query
 	 */
 	abstract class QueryComponent
@@ -55,7 +53,6 @@
 	/**
 	 * @class SelectFieldQueryComponent Class representing a select field.
 	 * This class represents a select field component.
-	 * @author Curverider Ltd
 	 * @see Query
 	 */
 	class SelectFieldQueryComponent extends QueryComponent
@@ -83,7 +80,6 @@
 	/**
 	 * @class LimitOffsetQueryComponent
 	 * Limit and offset clauses of a query.
-	 * @author Curverider Ltd
 	 * @see Query
 	 */
 	class LimitOffsetQueryComponent extends QueryComponent
@@ -109,7 +105,6 @@
 	/**
 	 * @class OrderQueryComponent
 	 * Order the query results.
-	 * @author Curverider Ltd
 	 * @see Query
 	 */
 	class OrderQueryComponent extends QueryComponent
@@ -132,7 +127,6 @@
 	/**
 	 * @class TableQueryComponent
 	 * List of tables to select from or insert into.
-	 * @author Curverider Ltd
 	 * @see Query
 	 */
 	class TableQueryComponent extends QueryComponent
@@ -153,7 +147,6 @@
 	/**
 	 * @class AccessControlQueryComponent
 	 * Access control component.
-	 * @author Curverider Ltd
 	 * @see Query
 	 */
 	class AccessControlQueryComponent extends QueryComponent
@@ -193,7 +186,6 @@
 	/**
 	 * @class JoinQueryComponent Join query.
 	 * Represents a join query.
-	 * @author Curverider Ltd
 	 * @see Query
 	 */
 	class JoinQueryComponent extends QueryComponent
@@ -226,7 +218,6 @@
 	/**
 	 * @class SetQueryComponent Set query.
 	 * Represents an update set query.
-	 * @author Curverider Ltd
 	 * @see Query
 	 */
 	class SetQueryComponent extends QueryComponent
@@ -259,7 +250,6 @@
 	/**
 	 * @class WhereQueryComponent
 	 * A component of a where query.
-	 * @author Curverider Ltd
 	 * @see Query
 	 */
 	class WhereQueryComponent extends QueryComponent
@@ -303,7 +293,6 @@
 	/**
 	 * @class WhereStaticQueryComponent
 	 * A component of a where query where there is no right hand table, rather a static value.
-	 * @author Curverider Ltd
 	 * @see Query
 	 */
 	class WhereStaticQueryComponent extends WhereQueryComponent
@@ -343,7 +332,6 @@
 	/**
 	 * @class WhereSetQueryComponent
 	 * A where query that may contain other where queries (in brackets).
-	 * @author Curverider Ltd
 	 * @see Query
 	 */
 	class WhereSetQueryComponent extends WhereQueryComponent
@@ -384,7 +372,6 @@
 	/**
 	 * @class QueryTypeQueryComponent
 	 * What type of query is this?
-	 * @author Curverider Ltd
 	 * @see Query
 	 */
 	abstract class QueryTypeQueryComponent extends QueryComponent
@@ -398,7 +385,6 @@
 	/**
 	 * @class SelectQueryTypeQueryComponent
 	 * A select query.
-	 * @author Curverider Ltd
 	 * @see Query
 	 */
 	class SelectQueryTypeQueryComponent extends QueryTypeQueryComponent
@@ -412,7 +398,6 @@
 	/**
 	 * @class InsertQueryTypeQueryComponent
 	 * An insert query.
-	 * @author Curverider Ltd
 	 * @see Query
 	 */
 	class InsertQueryTypeQueryComponent extends QueryTypeQueryComponent
@@ -426,7 +411,6 @@
 	/**
 	 * @class DeleteQueryTypeQueryComponent
 	 * A delete query.
-	 * @author Curverider Ltd
 	 * @see Query
 	 */
 	class DeleteQueryTypeQueryComponent extends QueryTypeQueryComponent
@@ -440,7 +424,6 @@
 	/**
 	 * @class UpdateQueryTypeQueryComponent
 	 * An update query.
-	 * @author Curverider Ltd
 	 * @see Query
 	 */
 	class UpdateQueryTypeQueryComponent extends QueryTypeQueryComponent
@@ -511,7 +494,6 @@
 	 * 		get_data($query);
 	 * </blockquote>
 	 *
-	 * @author Curverider Ltd
 	 */
 	class Query
 	{
@@ -745,7 +727,6 @@
 	 * The constructor for this class sets a number of defaults, for example sets default access controls
 	 * and a limit and offset - to change this then set it manually.
 	 *
-	 * @author Curverider Ltd
 	 * @see Query
 	 */
 	class SimpleQuery extends Query

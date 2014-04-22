@@ -4,7 +4,6 @@
  *
  * @package Elgg
  * @subpackage Core
- * @author Curverider Ltd
  * @link http://elgg.org/
  */
 
@@ -13,7 +12,6 @@
  *
  * @package Elgg
  * @subpackage Core
- * @author Curverider Ltd
  */
 interface Exportable {
 	/**
@@ -31,7 +29,6 @@ interface Exportable {
 
 /**
  * Define an interface for all ODD importable objects.
- * @author Curverider Ltd
  */
 interface Importable {
 	/**

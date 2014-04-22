@@ -5,7 +5,6 @@
  *
  * @package Elgg
  * @subpackage Core
- * @author Curverider Ltd <info@elgg.com>
  * @link http://elgg.org/
  */
 
@@ -14,7 +13,6 @@
 /**
  * GenericResult Result superclass.
  *
- * @author Curverider Ltd <info@elgg.com>
  * @package Elgg
  * @subpackage Core
  */
@@ -122,7 +120,6 @@ abstract class GenericResult {
  * SuccessResult
  * Generic success result class, extend if you want to do something special.
  *
- * @author Curverider Ltd <info@elgg.com>
  * @package Elgg
  * @subpackage Core
  */
@@ -144,7 +141,6 @@ class SuccessResult extends GenericResult {
  * ErrorResult
  * The error result class.
  *
- * @author Curverider Ltd <info@elgg.com>
  * @package Elgg
  * @subpackage Core
  */
@@ -190,7 +186,6 @@ class ErrorResult extends GenericResult {
  * ElggHMACCache
  * Store cached data in a temporary database, only used by the HMAC stuff.
  *
- * @author Curverider Ltd <info@elgg.com>
  * @package Elgg
  * @subpackage API
  */
@@ -323,8 +318,6 @@ $API_METHODS = array();
  * 	 )
  * @param string $description (optional) human readable description of the function.
  * @param string $call_method (optional) Define what http method must be used for this function. Default: GET
- * @param bool $require_api_auth (optional) (default is false) Does this method require API authorization? (example: API key)
- * @param bool $require_user_auth (optional) (default is false) Does this method require user authorization?
  * @return bool
  */
 function expose_function($method, $function, array $parameters = NULL, $description = "", $call_method = "GET", $require_api_auth = false, $require_user_auth = false) {
@@ -679,7 +672,6 @@ function serialise_parameters($method, $parameters) {
 	return $serialised_parameters;
 }
 
-// API authorization handlers /////////////////////////////////////////////////////////////////////
 
 /**
  * PAM: Confirm that the call includes a valid API key

@@ -6,7 +6,6 @@
  *
  * @package Elgg
  * @subpackage Core
- * @author Curverider Ltd
  * @link http://elgg.org/
  */
 
@@ -113,7 +112,6 @@ class ElggSession implements ArrayAccess {
  * Return the current logged in user, or null if no user is logged in.
  *
  * If no user can be found in the current session, a plugin hook - 'session:get' 'user' to give plugin
- * authors another way to provide user details to the ACL system without touching the session.
  */
 function get_loggedin_user() {
 	global $SESSION;

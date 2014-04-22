@@ -16,7 +16,6 @@
  * @package Elgg
  * @subpackage API
 
- * @author Curverider Ltd
 
  * @link http://elgg.org/
  */
@@ -213,7 +212,6 @@ function set_user_notification_setting($user_guid, $method, $value) {
 
 /**
  * Notification exception.
- * @author Curverider Ltd
  */
 class NotificationException extends Exception {}
 
@@ -361,25 +359,17 @@ function register_notification_object($entity_type, $object_subtype, $english_na
 }
 
 /**
- * Establish a 'notify' relationship between the user and a content author
  *
  * @param int $user_guid The GUID of the user who wants to follow a user's content
- * @param int $author_guid The GUID of the user whose content the user wants to follow
  * @return true|false Depending on success
  */
-function register_notification_interest($user_guid, $author_guid) {
-	return add_entity_relationship($user_guid, 'notify', $author_guid);
 }
 
 /**
- * Remove a 'notify' relationship between the user and a content author
  *
  * @param int $user_guid The GUID of the user who is following a user's content
- * @param int $author_guid The GUID of the user whose content the user wants to unfollow
  * @return true|false Depending on success
  */
-function remove_notification_interest($user_guid, $author_guid) {
-	return remove_entity_relationship($user_guid, 'notify', $author_guid);
 }
 
 /**

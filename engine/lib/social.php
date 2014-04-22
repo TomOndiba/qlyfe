@@ -5,7 +5,6 @@
  *
  * @package Elgg
  * @subpackage Core
- * @author Curverider
  * @link http://elgg.org/
 
 /**

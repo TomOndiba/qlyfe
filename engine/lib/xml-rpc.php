@@ -5,7 +5,6 @@
 	 * 
 	 * @package Elgg
 	 * @subpackage Core
-	 * @author Curverider Ltd
 	 * @link http://elgg.org/
 	 */
 
@@ -14,7 +13,6 @@
 	/**
 	 * @class XMLRPCCall
 	 * This class represents 
-	 * @author Curverider Ltd
 	 */
 	class XMLRPCCall
 	{
@@ -75,7 +73,6 @@
 
 	/**
 	 * @class XMLRPCParameter Superclass for all RPC parameters.
-	 * @author Curverider Ltd
 	 */
 	abstract class XMLRPCParameter
 	{
@@ -87,7 +84,6 @@
 	
 	/**
 	 * @class XMLRPCIntParameter An Integer.
-	 * @author Curverider Ltd
 	 */
 	class XMLRPCIntParameter extends XMLRPCParameter
 	{
@@ -106,7 +102,6 @@
 	
 	/**
 	 * @class XMLRPCBoolParameter A boolean.
-	 * @author Curverider Ltd
 	 */
 	class XMLRPCBoolParameter extends XMLRPCParameter
 	{
@@ -126,7 +121,6 @@
 	
 	/**
 	 * @class XMLRPCStringParameter A string.
-	 * @author Curverider Ltd
 	 */
 	class XMLRPCStringParameter extends XMLRPCParameter
 	{
@@ -146,7 +140,6 @@
 	
 	/**
 	 * @class XMLRPCDoubleParameter A double precision signed floating point number.
-	 * @author Curverider Ltd
 	 */
 	class XMLRPCDoubleParameter extends XMLRPCParameter
 	{
@@ -165,7 +158,6 @@
 	
 	/**
 	 * @class XMLRPCDateParameter An ISO8601 data and time.
-	 * @author Curverider Ltd
 	 */
 	class XMLRPCDateParameter extends XMLRPCParameter
 	{
@@ -192,7 +184,6 @@
 	
 	/**
 	 * @class XMLRPCBase64Parameter A base 64 encoded blob of binary.
-	 * @author Curverider Ltd
 	 */
 	class XMLRPCBase64Parameter extends XMLRPCParameter
 	{
@@ -216,7 +207,6 @@
 	
 	/**
 	 * @class XMLRPCStructParameter A structure containing other XMLRPCParameter objects.
-	 * @author Curverider Ltd
 	 */
 	class XMLRPCStructParameter extends XMLRPCParameter
 	{
@@ -264,7 +254,6 @@
 	
 	/**
 	 * @class XMLRPCArrayParameter An array containing other XMLRPCParameter objects.
-	 * @author Curverider Ltd
 	 */
 	class XMLRPCArrayParameter extends XMLRPCParameter
 	{
@@ -311,7 +300,6 @@
 	
 	/**
 	 * @class XMLRPCResponse XML-RPC Response. 
-	 * @author Curverider Ltd
 	 */
 	abstract class XMLRPCResponse
 	{
@@ -339,7 +327,6 @@
 
 	/**
 	 * @class XMLRPCSuccessResponse
-	 * @author Curverider Ltd
 	 */
 	class XMLRPCSuccessResponse extends XMLRPCResponse
 	{
@@ -358,7 +345,6 @@
 
 	/**
 	 * @class XMLRPCErrorResponse
-	 * @author Curverider Ltd
 	 */
 	class XMLRPCErrorResponse extends XMLRPCResponse
 	{		

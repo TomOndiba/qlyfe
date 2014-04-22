@@ -5,7 +5,6 @@
  *
  * @package Elgg
  * @subpackage Core
- * @author Curverider Ltd
  * @link http://elgg.org/
  */
 
@@ -18,7 +17,6 @@
  *
  * To have events involving your object to be logged simply implement this interface.
  *
- * @author Curverider Ltd
  */
 interface Loggable {
 	/**
