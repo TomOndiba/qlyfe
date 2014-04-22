@@ -5,7 +5,6 @@
 	 * This plugin allows users to put a list of their family, on their profile
 	 * 
 	 * @package QlyfeFamily
-	 * @author brian
 	 */
 	
 		function family_init() {
